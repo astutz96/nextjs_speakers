@@ -14,4 +14,5 @@ const Speakers = ({speakers}) => {
     );
 };
 
-export default withData(Speakers);
+const maxSpeakersToShow = 2;
+export default withData(maxSpeakersToShow)(Speakers);
