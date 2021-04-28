@@ -1,22 +1,7 @@
 import React from 'react'; 
+import withData from '../Speakers/withData'
 
-const Speakers = () => {
-
-const speakers = [
-    {
-        imageSrc: 'speaker-component-1124', 
-        name: 'Douglas Crockford'
-    },
-    {
-        imageSrc: 'speaker-component-1530', 
-        name: 'Tamara Baker'
-    },
-    {
-        imageSrc: 'speaker-component-10803', 
-        name: 'Eugene Chuvyrov'
-    }
-];
-
+const Speakers = ({speakers}) => {
     return(
         <div>
             {speakers.map(({imageSrc, name}) => {
@@ -29,5 +14,4 @@ const speakers = [
     );
 };
 
-
-export default Speakers;
+export default withData(Speakers);
