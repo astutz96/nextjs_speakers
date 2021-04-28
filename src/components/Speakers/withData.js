@@ -1,3 +1,10 @@
+/* 
+Higher order components is a functional component that takes in a component,
+enhances it with additional properties, then takes returns a new enhanced component.
+Higher Order Functions/Components are practically useless on their own, 
+but define behaviour or properties when used.
+*/
+
 const withData = (maxSpeakersToShow) => (Component) => {
     const speakers = [
         { imageSrc: 'speaker-component-1124', name: 'Douglas Crockford'},
